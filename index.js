@@ -12,8 +12,5 @@ app.use(cors())
 
 app.use('/api', router)
 
-app.get('/', async(req, res)=>{
-    res.send('hello world')
-})
 
 app.listen(port, ()=>console.log(`Running${port}`))
