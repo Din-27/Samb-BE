@@ -13,7 +13,7 @@ exports.addUser = async (req, res) => {
       res.send({
         status: "Success",
         dataUser : {
-          data,
+          ...data,
         }
       })
     } catch (e) {
